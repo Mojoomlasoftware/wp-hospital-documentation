@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+         ================================================== -->
+<meta charset="utf-8">
+<title>Hospital management system - Documentation</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+         ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+         ================================================== -->
+<link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
+<link rel="stylesheet" href="css/print.css" type="text/css"  media="print">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+<!-- JS
+         ================================================== -->
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<!--[if lt IE 9]>
+      <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
+      <![endif]-->
+<!-- HTML5 Shiv events (end)-->
+<!-- Favicons
+         ================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<!-- Primary Page Layout
+         ================================================== -->
+<div id="wrap" class="colorskin-0">
+  <!-- end-header -->
+  <section class="container">
+    <div class="row">
+      <div id="header-sm">
+        <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo-warranty.png" width="150" id="img-logo" alt="logo"></a> </div>
+        <div class="col-md-8 col-md-offset-1 desc">
+          <h4 class="slight">Hospital Management System</h4>
+          <h5 class="slight"><small> Documented by Mojoomla - at June 27 2023</small></h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <aside id="side-nav">
+          <div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla" style="margin-bottom:20px;"> </div>
+          <ul id="top-menu">
+            <li><a class="current" href="#Introduction">Introduction</a></li>
+            <li><a href="#Installation">Installation</a></li>
+			<li><a href="#system_setting">System Setting</a></li>
+			<li><a href="#fronted-login">Fronted Pages Setting</a></li>
+			<li><a href="#setting-up-Language">Setting Up Language</a></li>
+			<li><a href="#admin_view">Admin</a></li>
+			<li><a href="#doctor_view">Doctor</a></li>
+			<li><a href="#patient_view">Patient</a></li>
+			<li><a href="#nurse_view">Nurse</a></li>
+			<li><a href="#pharmacist_view">Pharmacist</a></li>
+			<li><a href="#laboratory_staff_view">Laboratory Staff</a></li>
+			<li><a href="#Support_staff_view">Support Staff</a></li>
+			<li><a href="#accountant_view">Accountant</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+			 
+                    </ul>
+        </aside>
+      </div>
+      <div class="col-md-8">
+        <section  id="Introduction">
+          <div id="header" class="row">
+            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
+            <div class="col-md-8 col-md-offset-1 desc">
+              <h4 class="slight">Hospital Management System</h4>
+              <h5 class="slight"><small> Documented by Mojoomla</a> - at June 27 2023</small></h5>
+            </div>
+          </div>
+          <hr class="vertical-space2">
+          <p align="center"><img src="images/preview-image.png"></p>
+          <h3><strong>A) Introduction</strong></h3>
+          <p>
+			Hospital Management System for WordPress plugin is the ideal way to manage complete hospital operation. It has different user roles like the doctor, patient, nurse, pharmacist, accountant, laboratory staff and Support staff.  
+			</p>
+          <p>This user guide covers all options that this plugin provides. Please read the documentation carefully as it probably contains answers to most of the questions that may arise. If you feel some aspect is not covered or have some questions, contact us via e-mail sales@mojoomla.com. We will do our best to answer you in the shortest time.</p>
+		 
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/RRFkoHXuqAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  <!-- <hr class="vertical-space2"> -->
+          <section id="Package">
+            <!-- <hr class="vertical-space2"> -->
+			<hr>
+          
+          <section id="Installation">
+            <h3><strong>B)  Installation</strong></h3>
+			<h4><strong> How to Increase WordPress memory limit</strong></h4><br>
+				<ul>
+					<li>
+						<h5><strong>Method 1: you need to edit the <mark>wp-config.php</mark> file on your WordPress site.</strong></h5>
+						<h6><strong>1) Update <mark>config.php</mark> file</strong></h6>
+						<p> define( 'WP_MEMORY_LIMIT', '256M' ); </p>
+					</li>
+					<li>
+						<h5><strong>Method 2: you need to edit the <mark>.htaccess</mark> file on your WordPress site.</strong></h5>
+						<h6><strong>1) Update <mark>.htaccess</mark> file</strong></h6>
+						<p> php_value upload_max_filesize 256M<br>php_value post_max_size 256M<br>php_value max_execution_time 600<br>php_value max_input_time 600</p>
+					</li><br>
+				</ul>
+				<br>
+			
+			
+			<h4><strong> How to Install WordPress Plugins via Dashboard</strong></h4><br>
+				<ul>
+					<li>
+						<h5><strong>1. Go to “Plugins” in your WordPress dashboard</strong></h5>
+						<p>Once you have your ZIP file, go back to your WordPress wp-admin panel, click on “Plugins” in the sidebar menu, and then on the “Add New” button.</p>
+						<img alt="Install plugin" src="images/installation/dashboard/plugins-add-new.png">
+					</li><br>
+					<li>
+						<h5><strong>2. Get the plugin archive</strong></h5>
+						<p>You can get <mark>hospital_managment.zip</mark> file on a downloaded plugin zip file.</p>
+					</li><br>
+					<li>
+						<h5><strong>3. Upload your plugin archive</strong></h5>
+						<p>From there, click on the “Upload Plugin” button visible at the top.</p>
+						<img alt="Install plugin" src="images/installation/dashboard/upload-plugin.png">
+					</li><br>
+					<li>
+						<h5><strong>4. Activate the plugin</strong></h5>
+						<p>When WordPress finishes , you’ll only need to activate the plugin.</p>
+						<img alt="Install plugin" src="images/installation/dashboard/install-complete.png"><br>
+						<p>After doing so, the plugin is online and you can start using it.</p>
+						<img alt="Install plugin" src="images/installation/dashboard/plugin-activated.png">
+					</li>
+				</ul>
+				<!-- <iframe width="730" height="315" src="https://www.youtube.com/embed/_hoQ530njls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				<br>
+
+			<h4><strong> How to Install WordPress Plugins via SFTP/FTP</strong></h4><br>
+				<ul>
+					<li>
+						<h5><strong>1. Extract the WordPress plugin ZIP file to a folder on your computer.</strong></h5><br>
+						<p>First please extract the plugin ZIP file on your local computer. When a ZIP file is extracted, some unzip software may add a parent folder outside of the plugin folder. In the next step, please make sure to upload the plugin folder which directly contains the plugin files, not its parent folder.</p><br>								
+					</li>
+					<li>
+						<h5><strong>2. Upload the plugin folder to your FTP server</strong></h5>
+						<p>In this step, please use your FTP software to upload the extracted plugin folder to your FTP server, the WordPress folder <mark>wp-content </mark> -> <mark>plugins </mark>.</p>
+					</li>
+					<li>
+						<h5><strong>3. Activate the plugin</strong></h5>
+						<p>Log into your WordPress backend, left menu, goto Plugins -> Installed Plugins, find the plugin from the list and click <mark>Activate</mark> to activate it.</p>
+					</li>
+				</ul>
+				<!-- <iframe width="730" height="315" src="https://www.youtube.com/embed/34177nQsofw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			
+            <hr>
+            </section>
+            <section id="system_setting">
+				<h3><strong>C)  System Setting</strong></h3>
+				<h4><strong>1) License Settings</strong></h4>
+				<p>Click on <strong>License Settings</strong> under hospital management link-list to start setting up the system. Please fill all required fields. You can access plugin only after successfully registration of your Envato License key. You can use a single license key for the only single domain.Same license key can't user for different domains. </p>
+				<img alt="" src="images/Admin/licence-settings.png">
+				<br>
+				<br>
+					<ul>
+					
+				<ol>
+					<li><strong>Domain:</strong> This is your domain name. You do not need to enter it. The system automatically takes it. </li>
+					<li><a href="https://www.dasinfomedia.com/how-to-find-codecanyon-purchase-key/"><strong>How to find your license key (purchase code)</strong></a></li>
+					<li><strong>Envato License key: </strong>Enter Envato License key. </li>
+					<li><strong>Email: </strong>Enter your email.</li>
+				</ol>
+				</ul>
+					<hr>
+			</section>
+			<section id="setup_wizard">
+					<h4><strong>2) Setup Wizard</strong></h4>
+				
+					<img alt="" src="images/Admin/setup_wizard.png">
+					<br>
+					<br>
+					<p>This all step follow for complate setup wizard. </p>
+					<ul>
+					
+					<ol>
+						<li><strong>General Setting:</strong>You can set all the settings as per your requirement by clicking on General Settings. </li>
+						<li><strong>Add Doctor: </strong>You can add doctor by clicking on Add Doctor. </li>
+						<li><strong>Schedule Setup: </strong>You can set appointment schedule setup for doctor by clicking on Schedule Setup. </li>
+						<li><strong>Add OutPatient: </strong>You can add outpatient by clicking on Add OutPatient. </li>
+						<li><strong>Add Medicine: </strong>You can add medicine by clicking on Add Medicine. </li>
+						<li><strong>Add Treatment: </strong>You can add treatment by clicking on Add Treatment. </li>
+						<li><strong>Add Prescription: </strong>You can prescribe prescription for patient by clicking on Add Prescription. </li>
+						<li><strong>Dispatch Medicine: </strong>You can dispatch medicine for patient by clicking on Dispatch Medicine. </li>
+						<li><strong>Create Invoice: </strong>You can create invoice by clicking on Create Invoice. </li>
+					</ol>
+					</ul>
+					
+				<hr>
+
+			</section>
+
+			<section id="fronted-login">
+				<h3><strong>D)  Fronted Pages Setting</strong></h3>
+				<ol>
+				<section id="login-page-setting">
+				
+				  <p> After installing this plugin create a login page with simply create a page. </p>
+				   <h5><strong><li>Login page Setting</li></strong></h5><br> 
+					<img alt="" src="images/login_page_setting.png"><br><br>           
+				  <h5><strong><li>Frontend side Login Page</li></strong></h5><br> 
+					<img alt="" src="images/login-page.png" style="border: 1px solid #dedede;"><br><br>           
+				   <p>Now all user can login from this login page. </p>
+				
+					<br>
+				 <p>Just create one page and put  this shortcode <strong> [hmgt_patient_registration] </strong> in page content.</p>
+				   <h5><strong><li> Patient Registration Page Setting</li></strong></h5>
+				   <br>  
+					   <img alt="" src="images/back-end-registration-page.png"><br><br>           
+				  <h5><strong><li> Frontend  Registration Page</li></strong></h5>
+				  <br>  
+					<img alt="" src="images/frontend_registrationpage.png" style="border: 1px solid #dedede;"><br><br>           
+				 
+				   </ol>
+					 <hr>
+				 
+			</section>
+			<section id="setting-up-Language">
+				<h3><strong>E) Setting Up Language</strong></h3>
+				<p>Hospital Management System Plugin is translation ready meaning you can edit the po files by which you can translate the text to any language.</p>
+				  The steps to do the translation are as follows. For eg let us consider translation to French.
+					  <ol>
+						   <li>Download and install <strong>Poedit</strong>.</li>
+						  <li>Open the file hospital-management / <strong>languages</strong> folder &rarr; hospital-mgt-fr_FR.po using <strong>Poedit</strong> .</li>
+						  <li>Choose the Source text and set its corresponding French text in Translation Text Area.</li>
+						  <li>Save the changes.</li>
+						  <li>For change language, you need to go to Settings menu and select <strong>Site Language</strong> from the drop-down.</li> 
+						  <img alt="" src="images/language-settings.png">  
+					  </ol>
+			</section>
+			<section id="admin_view">
+				 <h3><strong>F)  Admin</strong></h3>
+				 <h4><strong>1) Dashboard</strong></h4>
+				 <p> Admin side dashboard view.</p>
+				<img alt="Install plugin" src="images/Admin/dashboard.png">
+				<br>
+				<br>
+				
+			</section>
+			<section>
+			
+			
+			
+          <section id="General-Settings">
+            <h4><strong>2) General Settings</strong></h4>
+            <p>Click on <strong>General Setting</strong> under hospital management link-list to start setting up the system . You are advised to fill all fields of General settings as these details are used in a different section of whole the system .You can change these settings as per your requirement.</p>
+            <img alt="" src="images/Admin/general-settings.png">
+            <br>
+            <br>
+             <ul>
+              
+            <ol>
+
+            	<li><strong>Hospital Name:</strong> Enter the name of the hospital.</li>
+                <li><strong>Starting Year: </strong>Enter starting year of the hospital. </li>
+                <li><strong>Hospital Address: </strong>Enter address of the hospital.</li>
+                <li><strong>Phone No.: </strong>Enter the official phone number of the hospital.</li>
+                <li><strong>Country: </strong>Enter country hospital Located in.</li>
+                <li><strong>E-mail: </strong>Enter the official e-mail address of the hospital.</li>
+                <li><strong>Date Formate </strong>Select date formate.</li>
+                <li><strong>Hospital Logo: </strong>Enter hospital logo.</li>
+                <li><strong>Profile Cover Image: </strong>Upload hospital photo and this will be used for profile background.</li>
+                <li><strong>User Can Change Profile Picture: </strong>If you want to user Can Change Profile Picture then enable it.</li>
+				<li><strong>Hospital Name print in Prescription: </strong>If you want to Hospital Name print in Prescription then enable it.</li>
+				<li><strong>Staff can Message To Admin: </strong>If you want to staff can Message to admin then enable it.</li>
+            </ol>
+ 
+            </ul>
+             <hr>
+            </section>
+            
+             <section id="Doctor">
+            <h4><strong>3)  Doctor</strong></h4>	
+            <p>You can add new Doctor and manage all doctors as well as view the complete list of all Doctors.</p>
+           
+            <img alt="doctor" src="images/Admin/doctor/doctor_list.png"><br><br>
+			
+			<ol>
+				<h5><strong><li>Add Doctor Information</li></strong></h5> 
+				<p> </p>
+				<img alt="teacher" src="images/Admin/doctor/add_doctor.png"><br><br>
+				<ul>
+						<li><strong>Name</strong>: Enter new doctor name.</li>
+						<li><strong>Department</strong>: Select a department for the new doctor.</li>
+						<li><strong>Add Or Remove</strong>: If doctor belongs department not on the list and you want to add department then click on <strong>Add Or Remove</strong> button. you can add new department from here.</li>
+						<img alt="teacher" src="images/Admin/doctor/add_doctor_department.png"><br><br>
+						<li><strong>Specialization</strong>: Select specialization of doctor.</li>
+						<li><strong>Add Or Remove</strong>: If doctor have specialization, not on the list and you want to add specialization then click on <strong>Add Or Remove</strong> button. you can add new specialization from here.</li>
+						<img alt="teacher" src="images/Admin/doctor/add_doctor_sepecilization.png"><br><br>
+						<li><strong>Degree</strong>: Enter Doctor have a degree.</li>
+						<li><strong>Visiting Charge</strong>: Enter doctor's visiting charge.</li>
+						<li><strong>Visiting Charge Tax</strong>: Enter doctor's visiting charge tax.</li>
+						<li><strong>Consulting Charge</strong>: Enter doctor's consulting charge.</li>
+						<li><strong>Consulting Charge Tax</strong>: Enter doctor's consulting charge tax.</li>
+						<li><strong>Home Town Address</strong>: Enter hometown address of the doctor.</li>
+						<li><strong>City</strong>: Enter city name of the doctor.</li>				
+						<li><strong>State</strong>: Enter state name of the doctor.</li>
+						<li><strong>Country</strong>: Enter the country name of the doctor.</li>
+						<li><strong>Office Address</strong>: Enter Office address of the doctor.</li>
+						<li><strong>City</strong>: Enter city name of doctor office.</li>				
+						<li><strong>State</strong>: Enter state name of doctor office.</li>
+						<li><strong>Country</strong>: Enter country name of doctor office.</li>
+						<li><strong>Zip code</strong>: Enter zip code of doctor address.</li>
+						<li><strong>Mobile Number</strong>: Enter mobile number of the doctor.</li>
+						<li><strong>Phone</strong>: Enter phone number of the doctor.</li>
+						<li><strong>Email</strong>: Enter email id from the doctor. Email ID must be unique.</li>
+						<li><strong>Username</strong>: Enter username to enable doctor login. Username must be unique. </li>
+						<li><strong>Password</strong>: Enter a password of doctor for login.</li>
+						<li><strong>Image</strong>: Upload profile image of the doctor.</li>
+						<li><strong>Curriculum vitae</strong>: Attach curriculum vitae of doctor has submitted to hospital.</li>
+						<li><strong>Education Certificate</strong>: Attach education certificate of doctor has submitted to hospital.</li>
+						<li><strong>Experience Certificate</strong>: Attach experience certificate of doctor has submitted to hospital.</li>
+						
+					</ul>
+					</ol>
+					
+					
+            <hr>
+            </section>
+            
+			 <section id="patient">
+            <h4><strong>4) In-Patient</strong></h4>
+            <p>You can manage all information about In-patient and also manage information of guardian.</p>
+            
+            <img alt="patient " src="images/Admin/patient/patient_list.png">
+            <br>
+            <br> 
+			<ol>
+				<h5><strong><li>Add In-patient Information step one</li></strong></h5> 
+				<p> </p>
+            
+            <img alt="add-patient " src="images/Admin/patient/add-patient-step-1.png"><br><br>
+					<ul>
+						<li><strong>Patient Id</strong>: Here patient Id will be automatically generated for each new patient. So that you do not need to enter this field.</li>
+						<li><strong>Name</strong>: Enter new patient name.</li>
+						<li><strong>Home Town Address</strong>: Enter hometown address of the patient.</li>
+						<li><strong>City</strong>: Enter city name of the patient.</li>				
+						<li><strong>State</strong>: Enter state name of the patient.</li>
+						<li><strong>Country</strong>: Enter the country name of the patient.</li>
+						<li><strong>Zip code</strong>: Enter zip code of patient address.</li>
+						<li><strong>Mobile Number</strong>: Enter mobile number of the patient.</li>
+						<li><strong>Email</strong>: Enter email id of patient. Email ID must be unique.</li>
+						<li><strong>Username</strong>: Enter username to enable patient login. Username must be unique. </li>
+						<li><strong>Password</strong>: Enter password of patient for login.</li>
+						<li><strong>Image</strong>: Upload profile image of the patient.</li>
+					</ul>
+			<br>
+			<p>After completion of the first step of add inpatient click on <b>Save and Next Step</b>.Step form will be displayed. </p>
+            <br> 
+			<h5><strong><li>Add In-patient Information step two</li></strong></h5> 
+				<p> </p>
+            
+            <img alt="add-patient " src="images/Admin/patient/add-patient-step-2.png"><br><br>
+					<ul>
+						<li><strong>Guardian Id</strong>: Enter guardian id for the guardian of the patient. This is not required field.</li>
+						<li><strong>Patient Id</strong>: Display current patient id.</li>
+						<li><strong>Name</strong>: Enter guardian name of the patient.</li>
+						<li><strong>Home Town Address</strong>: Enter hometown address of guardian.</li>
+						<li><strong>City</strong>: Enter city name of the patient.</li>				
+						<li><strong>Mobile Number</strong>: Enter mobile number of guardian.</li>
+						<li><strong>Phone</strong>: Enter the phone number of guardian if available.</li>
+						<li><strong>Relation With Patient</strong>: Enter relation of a guardian with the patient.</li>
+						<li><strong>Image</strong>: Upload profile image of guardian.</li>
+					</ul>
+			<br>
+			<p>After completion of the second step of add inpatient click on <b>Save and Next Step</b>. Step three will be displayed. </p>
+            <br> 
+			<h5><strong><li>Add In-patient Information step three</li></strong></h5> 
+				<p> </p>
+            
+            <img alt="add-patient " src="images/Admin/patient/add-patient-step-3.png"><br><br>
+					<ul>
+						<li><strong>Patient Id</strong>: Display current patient id.</li>
+						<li><strong>Admit Date</strong>: Enter admit date of patient.</li>
+						<li><strong>Admit Time</strong>: Enter admits time of the patient.</li>
+						<li><strong>Patient status</strong>: Select current status of the patient.</li>	
+						<li><strong>Assign Doctor</strong>: Select doctor for assign to the patient.</li>				
+						<li><strong>Symptoms</strong>: Enter symptoms for the patient.</li>
+					</ul>
+					<p>If you have not added any doctor still now and you want to add new doctor then click on <strong>Add Doctor</strong> button and you will see following doctor form popup.</p>
+					<img alt="add-doctor " src="images/Admin/patient/adddoctor.png"><br><br>
+			
+			
+            <br> 
+			<h5><strong><li>View Detail</li></strong></h5> 
+              <p>Admin can view detail of particular patient by clicking on view detail button. This will open up details in the pop-up box. From here admin can also all view history of the patient in the hospital.</p>
+			<ul>
+			<p><strong><li>Diagnosis Reports</li></strong></p>
+		   <img alt="view detail" src="images/Admin/patient/view_diagnosis_report.png">
+             <br>
+            <br> 
+			<p><strong><li>Doctor Notes </li></strong></p>
+		   <img alt="view detail" src="images/Admin/patient/doctor_notes.png">
+             <br>
+            <br> 
+			<p><strong><li>Patient History </li></strong></p>
+		   <img alt="view detail" src="images/Admin/patient/patient_history.png">
+             <br>
+            <br> 
+			<p><strong><li>Nurse Notes </li></strong></p>
+		   <img alt="view detail" src="images/Admin/patient/nurse_note.png">
+             <br>
+            <br>  
+			</ul>
+            <h5><strong><li>Charges</li></strong></h5> 
+              <p>Display all charges for a particular patient.</p>
+            
+            <img alt="view parent" src="images/Admin/patient/view_charges.png">
+           
+			</ol>
+			<hr>
+            </section>
+			 
+			 <section id="outpatient">
+            <h4><strong>5) Out-Patient</strong></h4>
+            <p>You can manage all information about Out-patient.</p>
+            
+            <img alt="student " src="images/Admin/outpatient/outpatient_list.png">
+            <br>
+            <br> 
+			<ol>
+				<h5><strong><li>Add Out-patient Information</li></strong></h5> 
+				<p> </p>
+            
+            <img alt="add-patient " src="images/Admin/outpatient/add_outpatient.png"><br><br>
+					<ul>
+						<li><strong>Patient Id</strong>: Here patient ID will be automatically generated for each new patient. So that you do not need to enter this field.</li>
+						<li><strong>Name</strong>: Enter new patient name.</li>
+						<li><strong>Select Blood Group</strong>: Select blood group of patient.</li>
+						<li><strong>Assign Doctor</strong>: Select doctor for assign to the patient.</li>
+						<li><strong>Symptoms</strong>: Enter symptoms for the patient.</li>
+						<li><strong>Diagnosis Report</strong>: Choose diagnosis report of the patient.</li>
+						<li><strong>Home Town Address</strong>: Enter hometown  address of the patient.</li>
+						<li><strong>City</strong>: Enter city name of the patient.</li>				
+						<li><strong>State</strong>: Enter state name of the patient.</li>
+						<li><strong>Country</strong>: Enter the country name of the patient.</li>
+						<li><strong>Zip code</strong>: Enter zip code of patient address.</li>
+						<li><strong>Mobile Number</strong>: Enter mobile number of the patient.</li>
+						<li><strong>Email</strong>: Enter email id of patient. Email ID must be unique.</li>
+						<li><strong>Username</strong>: Enter username to enable patient login. Username must be unique. </li>
+						<li><strong>Password</strong>: Enter password of patient for login.</li>
+						<li><strong>Image</strong>: Upload profile image of the patient.</li>
+					</ul>
+			<br>
+			
+			
+			<p>After completion of the first step of add Outpatient click on <b>Save Patient</b>. </p>
+           
+            </ol>
+			<hr>
+            </section>
+			
+            
+            
+            <section id="nurse">
+            <h4><strong>6)  Nurse</strong></h4>
+            <p>You can add a new Nurse information and view the complete list of Nurse. The system allows the Nurse can handle patient in the hospital.</p>
+				
+            <img alt="nurse " src="images/Admin/nurse/nurse_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Nurse</li></strong></h5>
+            <img alt="parent " src="images/Admin/nurse/add_nurse.png"><br><br>
+					<p>Must fill all required fields in adding nurse form for add new staff member.</p>
+					<ul>
+						<li><strong>Department</strong>: Select department for a new nurse.<br> If department not available in the list which you want to select then click on <strong>Add Or Remove</strong> button and add new department. </li>					
+					</ul></ol>
+			<hr>
+			</section>
+		
+              <section id="support_staff">
+            <h4><strong>7)  Support Staff</strong></h4>
+            <p>You can add a new Support Staff information and view the complete list of Support Staff. The system allows the Support Staff can handle admit a new patient.</p>
+				
+            <img alt="nurse " src="images/Admin/support_staff/add_support_staff.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Support Staff</li></strong></h5>
+            <img alt="parent " src="images/Admin/support_staff/support_staff_list.png"><br><br>
+					<p>Must fill all required fields in add Support Staff form for add new staff member. </p>
+					<ul>
+						<li><strong>Department</strong>: Select department for new Support Staff.<br> If department not available in the list which you want to select then click on <strong>Add Or Remove</strong> button and add new department.</li>	
+					</ul></ol>
+					<hr>
+			</section>
+			 <section id="Pharmacist">
+            <h4><strong>8)  Pharmacist</strong></h4>
+            <p>You can add a new Pharmacist information and view a complete list of Pharmacist. The system allows the Pharmacist can handle medicine.</p>
+				
+            <img alt="nurse " src="images/Admin/pharmasist/pharmasist_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Pharmacist</li></strong></h5>
+            <img alt="parent " src="images/Admin/pharmasist/add_pharmasist.png"><br><br>
+					<p>Must fill all required fields in adding Pharmacist form for add new Pharmacist. </p>
+					</ol>
+					<hr>
+			</section>
+			 <section id="Laboratory_staff">
+            <h4><strong>9)  Laboratory Staff</strong></h4>
+            <p>You can add a new Laboratory Staff information and view a complete list of Laboratory Staff. The system allows the Laboratory Staff can handle patient diagnosis reports and blood bank.</p>
+				
+            <img alt="nurse " src="images/Admin/laboratory_staff/laboratory_staff_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Laboratory Staff</li></strong></h5>
+            <img alt="parent " src="images/Admin/laboratory_staff/add_laboratory_staff.png"><br><br>
+					<p>Must fill all required fields in adding Pharmacist form for add new Laboratory Staff.</p>
+					</ol>
+					<hr>
+			</section>
+			<section id="Accountant">
+            <h4><strong>10)  Accountant</strong></h4>
+            <p>You can add a new Accountant information and view a complete list of Accountant. The system allows the Accountant can handle hospital invoice data.</p>
+				
+            <img alt="nurse " src="images/Admin/accountant/accountant_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Accountant</li></strong></h5>
+            <img alt="parent " src="images/Admin/accountant/add_accountant.png"><br><br>
+					<p>Must fill all required fields in adding Accountant form for add new Accountant. </p>
+					</ol>
+					<hr>
+			</section>
+			<section id="Medicine">
+            <h4><strong>11)  Medicine</strong></h4>
+            <p>You can add a new Medicine and view a complete list of Medicine.</p>
+				
+            <img alt="nurse " src="images/Admin/medicine/medicine_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Medicine</li></strong></h5>
+            <img alt="parent " src="images/Admin/medicine/add_medicine.png"><br><br>
+					<p>Must fill all required fields in adding Medicine form for add new Medicine. </p>
+					<ul>
+						<li><strong>Medicine Name</strong>: Enter medicine name for add new medicine.</li>	
+						<li><strong>Category Name</strong>: Select Category Name for new medicine. <br> If medicine category name not available in a list which you want to select then click on <strong>Add Or Remove</strong> button and add new category name. </li>	
+						<li><strong>Description</strong>: Enter description for new medicine.</li>	
+						<li><strong></strong>: Enter price for new medicine.</li>	
+						<li><strong>Batch Number</strong>: Enter batch number for new medicine.</li>	
+						<li><strong>Quantity</strong>: Enter quantity for new medicine.</li>	
+						<li><strong>Price</strong>: Enter price for new medicine.</li>	
+						<li><strong>Medicine ID</strong>: Enter medicine id for new medicine.</li>	
+						<li><strong>Note</strong>: Enter note for new medicine.</li>	
+						<li><strong>Discount</strong>: Enter discount for new medicine.</li>	
+						<li><strong>Tax</strong>: Select tax for new medicine.</li>	
+						<li><strong>Manufacturer Company Name</strong>: Enter manufacturer company name of new medicine.</li>
+						<li><strong>Manufactured Date</strong>: Select manufactured date of new medicine.</li>
+						<li><strong>Expiry Date</strong>: Select expiry date of new medicine.</li>
+						<li><strong>Stock Status</strong>: Select status of new medicine.</li>	
+					</ul>
+					<h5><strong><li>Dispatched Medicine List</li></strong></h5>
+				<img alt="parent " src="images/Admin/medicine/dispatch_medicine_list.png"><br><br>
+					<p>Here you can manage medicine dispatch to patients. </p>
+					<h5><strong><li>Dispatch Medicine</li></strong></h5>
+				<img alt="parent " src="images/Admin/medicine/dispatch_medicine.png"><br><br>
+					<p>Must fill all required fields in Dispatch Medicine form for dispatch medicine to the patient. </p>
+					</ol>
+					<hr>
+			</section>
+			<section id="Treatment">
+            <h4><strong>12)  Treatment</strong></h4>
+            <p>You can add a new Treatment and view the complete list of all treatments provides from the hospital.</p>
+				
+            <img alt="Treatment " src="images/Admin/tretment/tretment_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Treatment</li></strong></h5>
+            <img alt="parent " src="images/Admin/tretment/add_tretment.png"><br><br>
+					<p>Must fill all required fields in adding Treatment form for add new Treatment. </p>
+					<ul>
+						<li><strong>Treatment Name</strong>: Enter treatment name for add new treatment.</li>	
+						<li><strong>Treatment Price</strong>: Enter price for new treatment.</li>	
+						<li><strong>Tax</strong>: Select tax for new treatment.</li>	
+					</ul></ol>
+					<hr>
+			</section>
+			<section id="Prescription">
+            <h4><strong>13)  Prescription</strong></h4>
+            <p>You can add a new Prescription and view the complete list of all Prescription. The Prescription can write only the doctors.</p>
+				
+            <img alt="Prescription " src="images/Admin/prescription/prescription_List.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Prescription</li></strong></h5>
+            <img alt="parent " src="images/Admin/prescription/add_prescription.png"><br><br>
+					<p>Must fill all required fields in adding Treatment form for add new Treatment. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient for whom you create a prescription.</li>	
+						<li><strong>Type</strong>: Select prescription type.</li>	
+						<li><strong>Treatment</strong>: Select treatment from the list.</li>	
+						<li><strong>Case History</strong>: Enter case history of the patients.</li>	
+						<li><strong>Medication</strong>: select medicine and select how many time take this medicine in one day and Enter a number of days take this medicine.</li>
+						<li><strong>Note</strong>: Enter extra notes of patient health-related.</li>
+					</ul>
+					<p>If you have not added any Outpatient still now and you want to add new Outpatient then click on <strong>Add Outpatient</strong> button and you will see following Outpatient form popup.</p>
+					<img alt="add-outpatient " src="images/Admin/prescription/add_outpatient.png"><br><br>
+			
+					</ol>
+					<hr>
+			</section>
+			<section id="Bed">
+            <h4><strong>14)  Bed</strong></h4>
+            <p>You can add a new Bed and view complete a list of all Beds.</p>
+			<img alt="Prescription " src="images/Admin/bed/bed_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Bed</li></strong></h5>
+            <img alt="parent " src="images/Admin/bed/add_bed.png"><br><br>
+					<p>Must fill all required fields in add Bed form for add a new Bed. </p>
+					<ul>
+						<li><strong>Bed category</strong>: Select bed category from the list.</li>	
+						<li><strong>Bed Number</strong>: Enter bed number for a new bed.</li>	
+						<li><strong>Charges</strong>: Enter charge for a new bed.</li>	
+						<li><strong>Tax</strong>: Select tax for a new bed.</li>	
+						<li><strong>Location</strong>: Enter location for a new bed.</li>	
+						<li><strong>Description</strong>: Enter description for a new bed.</li>	
+					</ul></ol>
+					<hr>
+			</section>
+			<section id="Bed">
+            <h4><strong>15)  Assign Bed/Nurse</strong></h4>
+            <p>You can assign a Bed and nurse to the patient and view the complete list of all assigned.</p>
+			<img alt="assign bed " src="images/Admin/assigned_bed/assigned_bed_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Assign Bed</li></strong></h5>
+            <img alt="assign bed " src="images/Admin/assigned_bed/assigned_bed.png"><br><br>
+					<p>Must fill all required fields in add Bed form for add a new Bed. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient to assign a bed.</li>
+						<li><strong>Patient Status</strong>: Select Patient Status for admitting  the patient.</li>
+						<li><strong>Bed Type</strong>: Select bed type for assign to the patient.</li>	
+						<li><strong>Bed Number</strong>: select bed number for assign to the patient.</li>	
+						<li><strong>Allotment Time</strong>: select bed allotment date of the patient.</li>	
+						<li><strong>Discharge Time</strong>: select discharge date of the patient.</li>	
+						<li><strong>Nurse</strong>: select Nurse for assign to the patient.</li>	
+						<li><strong>Charges</strong>: Enter charge for a new bed.</li>	
+					</ul>
+					
+					<p>If you have not added any Bed still now and you want to add new bed then click on <strong>Add Bed</strong> button and you will see following bed form popup.</p>
+					<img alt="add-doctor " src="images/Admin/assigned_bed/addbed.png"><br><br>
+					
+					
+					<h5><strong><li>Transfer Bed</li></strong></h5>
+				<img alt="assign bed " src="images/Admin/assigned_bed/transfer_bed.png"><br><br>
+					<p>Must fill all required fields in transferring bed form for transfer patient bed. </p>
+					</ol>
+					<hr>
+			</section>
+			
+			<section id="Instrument">
+            <h4><strong>16)  Instrument Management</strong></h4>
+            <p>You can easily manage instrument using this module. Here you can add, edit or delete instruments. Here you can also assign the instrument to patients.</p>
+			<img alt="assign bed " src="images/Admin/instrument/instrument_list.png"><br><br>
+            <ol>
+				
+			<h5><strong><li>Add Instrument</li></strong></h5>
+            <img alt="Add Instrument" src="images/Admin/instrument/add_instrument.png"><br><br>
+					<p>Must fill all required fields in adding Instrument form for add new Instrument. </p>
+			<h5><strong><li>Assigned Instrument List</li></strong></h5>
+            <img alt="Assigned Instrument List" src="images/Admin/instrument/assigned_instrument_list.png"><br><br>
+					<p>Here you can manage instrument assigned to patients.</p>
+			<h5><strong><li>Assign Instrument</li></strong></h5>
+            <img alt="Assign Instrument" src="images/Admin/instrument/assigned_instrument.png"><br><br>
+					<p>You can assign an instrument to the patient. For assign instrument to the patient, you need to fill all required fields.</p>		
+					</ol>
+					<hr>
+			</section>
+			
+			
+			<section id="Operation">
+            <h4><strong>17)  Operation List</strong></h4>
+            <p>You can add an Operation and view the complete list of all completed Operations.</p>
+			<img alt="assign bed " src="images/Admin/operation/operation_List.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Operation</li></strong></h5>
+            <img alt="assign bed " src="images/Admin/operation/add_operation.png"><br><br>
+					<p>Must fill all required fields in add Operation form for add new Operation. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient for Operation.</li>
+						<li><strong>Patient Status</strong>: Select Patient Status.</li>
+						<li><strong>Operation</strong>: Select Operation type for add Operation.</li>	
+						<li><strong>Doctor</strong>: select Doctor for complete operation.</li>	
+						<li><strong>Bed category</strong>: Select bed category from the list.</li>	
+						<li><strong>Bed Number</strong>: select bed number for operation.</li>	
+						<li><strong>Operation Date</strong>: select operation date of the patient.</li>		
+						<li><strong>Operation Time</strong>: Enter operation time.</li>	
+						<li><strong>Description</strong>: Enter the description of operation related.</li>	
+						<li><strong>Operation Charge</strong>: Enter Operation Charge.</li>	
+						<li><strong>Operation Status</strong>: select Operation status.</li>	
+					</ul>
+					</ol>
+			<hr>
+			</section>
+			<section id="Diagnosis Report">
+            <h4><strong>18)  Diagnosis Report List</strong></h4>
+            <p>You can add a Diagnosis Report and view a complete list of all Diagnosis Report.</p>
+			<img alt="Diagnosis Report" src="images/Admin/dignosis_report/diagnosis_report_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Diagnosis Report</li></strong></h5>
+            <img alt="Diagnosis Report" src="images/Admin/dignosis_report/add_diagnosis_report.png"><br><br>
+					<p>Must fill all required fields in adding Diagnosis Report form for add new Diagnosis Report. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient for a Diagnosis Report.</li>
+						<li><strong>Report Name</strong>: Select Report Name.</li>						
+						<li><strong>Upload Report</strong>: Upload document copy of the report.</li>	
+						<li><strong>Description</strong>: Enter the description of the report related.</li>	
+						<li><strong>Send Email to Patient</strong>: If you want to send email to patient then enable it.</li>	
+						<li><strong>Send Email to Doctor</strong>: If you want to send email to doctor then enable it.</li>	
+					</ul></ol>
+					<hr>
+			</section>
+			<section id="Blood bank">
+            <h4><strong>19)  Blood bank</strong></h4>
+            <p>You can add a Blood Group and view the complete list of all Blood Groups.</p>
+			<img alt="Blood Groups" src="images/Admin/blood_bank/blood_group_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Blood Group</li></strong></h5>
+            <img alt="Diagnosis Report" src="images/Admin/blood_bank/add_blood_group.png"><br><br>
+					<p>Must fill all required fields in add Blood Group form for add new Blood Group. </p>
+					<ul>
+						<li><strong>Blood Group</strong>: Enter Blood Group.</li>
+						<li><strong>No of Bags</strong>: Enter number of bags of this blood group.</li>
+					</ul>
+			<h5><strong><li>Blood Donor List</li></strong></h5>
+			<p>You can add a Blood Donor and view the complete list of all Blood Donors.</p>
+			<img alt="Blood Groups" src="images/Admin/blood_bank/blood_donor_list.png"><br><br>
+			<h5><strong><li>Add Blood Donor</li></strong></h5>
+            <img alt="Blood Donor List" src="images/Admin/blood_bank/add_blood_donor.png"><br><br>
+					<p>Must fill all required fields in add Blood Donor form for add new Blood Donor. </p>
+					<ul>
+						<li><strong>Full Name</strong>: Enter the blood donor name.</li>
+						<li><strong>Age</strong>: Enter the blood donor age.</li>
+						<li><strong>Phone</strong>: Enter the blood donor phone number.</li>	
+						<li><strong>Email</strong>: Enter Email from the blood donor.</li>	
+						<li><strong>Blood Group</strong>: Select blood group of the  donor.</li>	
+						<li><strong>Number Of Bags</strong>: Enter number of bags of this blood group.</li>	
+						<li><strong>Last Donation Date</strong>: Select last donation date of the blood donor.</li>	
+					</ul>
+			<h5><strong><li>Dispatch Blood List</li></strong></h5>
+			<p>You can dispatch Blood and view the complete list of all dispatch Blood.</p>
+			<img alt="Blood Groups" src="images/Admin/blood_bank/dispatch_blood_list.png"><br><br>
+			<h5><strong><li>Dispatch Blood</li></strong></h5>
+            <img alt="Blood Donor List" src="images/Admin/blood_bank/dispatch_blood.png"><br><br>
+					<p>Must fill all required fields in dispatch Blood form for new dispatch Blood. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient name.</li>
+						<li><strong>Blood Group</strong>: Select blood group of the dispatch blood.</li>	
+						<li><strong>Number Of Bags</strong>: Enter number of bags of this blood group.</li>	
+						<li><strong>Charge</strong>: Enter charge od the dispatch blood.</li>	
+						<li><strong>Tax</strong>: Select tax for dispatch blood.</li>	
+						<li><strong>Date</strong>: Select date of dispatch the blood.</li>	
+					</ul>	
+				</ol>
+					<hr>
+			</section>
+			<section id="Diagnosis Report">
+            <h4><strong>20)  Appointment</strong></h4>
+            <p>You can add an Appointment and view the complete list of all Appointments.</p>
+			<img alt="Diagnosis Report" src="images/Admin/appointment/appointment_list.png"><br><br>
+            <ol>
+				<h5><strong><li>Add Appointment</li></strong></h5>
+				<img alt="Diagnosis Report" src="images/Admin/appointment/add_appointment.png"><br><br>
+				<p>Must fill all required fields in adding Appointment form for add new Appointment. </p>
+				<ul>
+					<li><strong>Patient</strong>: Select patient for appointment.</li>
+					<li><strong>Doctor</strong>: select Doctor for appointment.</li>	
+					<li><strong>Date</strong>: Select Date for the appointment.</li>
+					<li><strong>Time</strong>: Select appointment time.</li>
+					<li><strong>Send SMS</strong>: If You want to send a message then select this checkbox.</li>
+					
+				</ul>
+				<h5><strong><li>Doctor Schedule Setup</li></strong></h5>
+				<img alt="Diagnosis Report" src="images/Admin/appointment/doctor_schedule_setup.png"><br><br>
+				<p>Must fill all required fields for Schedule Setup. Here you can set doctor schedule setup. </p>
+				<ul>
+					<li><strong>Doctor</strong>: Select Doctor For Schedule Setup.</li>
+					<li><strong>Appointment Duration</strong>: select Appointment Duration For Schedule Setup.</li>	
+					<li><strong>Time</strong>: Set appointment time schedule.</li>
+				</ul>
+				<p><strong>Note: </strong>Existing doctor schedule setup is mandatory if using existing system.</p>
+			</ol>
+					<hr>
+			</section>
+			<section id="Diagnosis Report">
+            <h4><strong>21)  Invoice</strong></h4>
+            <p>You can add an Invoice and view complete the list of all Invoice.</p>
+			<img alt="Diagnosis Report" src="images/Admin/invoice/invoice_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Invoice</li></strong></h5>
+            <img alt="Diagnosis Report" src="images/Admin/invoice/add_invoice.png"><br><br>
+					<p>Must fill all required fields in adding Invoice form for add new Invoice. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient for invoice.</li>
+						<li><strong>Invoice Title</strong>: Enter invoice title.</li>
+						<li><strong>Check Charges</strong>: Click on this button for check patient charges or add to a selected patient invoice.</li>
+						<p>Here you need to keep checking just that checkboxes which transactions the amount you want to pay in this invoice.</p>
+						<img alt="Diagnosis Report" src="images/Admin/invoice/charges_popup.png"><br><br>
+						<li><strong>Subtotal Amount</strong>: Enter the Subtotal amount of invoice.</li>	
+						<li><strong>Discount Amount</strong>: Enter the discount amount of invoice.</li>	
+						<li><strong>Adjustment Amount</strong>: Enter adjustment amount of invoice.</li>	
+						<li><strong>Date</strong>: Enter date of invoice.</li>	
+						<li><strong>Comments</strong>: Enter comments of invoice.</li>	
+					</ul></ol>
+			<h5><strong><li>Income List</li></strong></h5>
+			 <p>You can add an Income and view a complete list of all Income.</p>
+			<img alt="Diagnosis Report" src="images/Admin/invoice/income_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Income</li></strong></h5>
+            <img alt="Diagnosis Report" src="images/Admin/invoice/add_income.png"><br><br>
+					<p>Must fill all required fields in adding Income form for add new Income. </p>
+					<ul>
+						<li><strong>Patient</strong>: Select patient for invoice.</li>
+						<li><strong>Status</strong>: select status of invoice payment method.</li>	
+						<li><strong>Payment Method</strong>: select payment methodo of invoice.</li>	
+						<li><strong>Payment Details</strong>: Enter invoice payment details.</li>	
+						<li><strong>Date</strong>: Enter date of invoice.</li>	
+						<li><strong>Income Entry</strong>: Enter income entry and also enter the total amount of that entry.
+						<li><strong>Add Income Entry</strong>: If you want to add other entry then click on <strong>Add Income Entry</strong> button.</li>
+						</li>	
+					</ul></ol>
+			<h5><strong><li>Expense List</li></strong></h5>
+			 <p>You can add a-Expense and view a complete list of all Expense.</p>
+			<img alt="Expense" src="images/Admin/invoice/expense_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Expense</li></strong></h5>
+            <img alt="Expense" src="images/Admin/invoice/add_expense.png"><br><br>
+				<p>Must fill all required fields in adding Expense form for add new Expense.</p>
+					<ul>
+						<li><strong>Party Name</strong>: Select Party Name for the expense.</li>
+						<li><strong>Status</strong>: select status of expense payment method.</li>	
+						<li><strong>Date</strong>: Enter date of expense.</li>	
+						<li><strong>Expense Entry</strong>: Enter Expense entry and also enter the total amount of that entry.
+						<li><strong>Add Expense Entry</strong>: If you want to add other entry then click on <strong>Add Expense Entry</strong> button.</li>
+						</li>	
+					</ul>
+						</ol>
+			<h5><strong><li>Tax List</li></strong></h5>
+			 <p>You can add an tax and view a complete list of all tax.</p>
+			<img alt="Diagnosis Report" src="images/Admin/invoice/tax_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Tax</li></strong></h5>
+            <img alt="Diagnosis Report" src="images/Admin/invoice/add_tax.png"><br><br>
+					<p>Must fill all required fields in adding tax form for add new tax. </p>
+					<ul>
+						<li><strong>Tax Name</strong>: Enter tax name.</li>
+						<li><strong>Tax Value</strong>: Enter tax value.</li>	
+					</ul></ol>			
+					<h5><strong><li>Print</li></strong></h5>
+					<p>You can also print invoice, income, and expense. For that just click on <strong>Print</strong> button from the pop-up.</p>
+					<img alt="print)invoice" src="images/Admin/invoice/print_invoice.png"><br><br>			
+				
+					<hr>
+					<h5><strong><li>Print Payment Receipt</li></strong></h5>
+					<p>You can also print invoice Payment Receipt. For that just click on <strong>Print Payment Receipt</strong> button.</p>
+					<img alt="print)invoice" src="images/Admin/invoice/print_payment_receipt.png">
+					<hr>
+			</section>
+			<section id="Events">
+            <h4><strong>22)  Events</strong></h4>
+            <p>You can add a Events and view a complete list of all Events.</p>
+			<img alt="Events" src="images/Admin/events/event_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Events</li></strong></h5>
+            <img alt="Events" src="images/Admin/events/add_event.png"><br><br>
+					<p>Must fill all required fields in adding event form for add new event. </p>
+					<ul>
+						<li><strong>Event/Notice</strong>: Select type of event from two type notice or event.</li>
+						<li><strong>Event Title</strong>: Enter title of the event.</li>
+						<li><strong>Event Comment</strong>: Enter event comments.</li>
+						<li><strong>Event Start Date</strong>: Enter event start date.</li>
+						<li><strong>Event End Date</strong>: Enter event End date.</li>
+						<li><strong>Event For</strong>: select for whom this event or notice.</li>	
+						<li><strong>Send SMS</strong>: If You want to send a message then select this checkbox.</li>
+						<li><strong>SMS Text</strong>: If a message sent then this textarea display.Here enter message text.</li>
+					</ul></ol>
+					<hr>
+			</section>
+			<section id="Message">
+            <h4><strong>23)  Message/Inbox</strong></h4>
+            <p>You can compose a new Message and view list of all Messages.</p>
+			<img alt="Events" src="images/Admin/message/inbox.png"><br><br>
+            <ol>
+			<h5><strong><li>Compose</li></strong></h5>
+            <img alt="Events" src="images/Admin/message/compose_message.png"><br><br>
+					<p>Must fill all required fields in Compose message. </p>
+					<ul>
+						<li><strong>Message To</strong>: select receive role.</li>
+						<li><strong>Subject</strong>: Enter Subject of the message.</li>
+						<li><strong>Message  Comment</strong>: Enter Message comments.</li>
+						<li><strong>Send SMS</strong>: If You want to send a message then select this checkbox.</li>
+						<li><strong>SMS Text</strong>: If the message sent then this textarea display.Here enter message text.</li>
+							
+					</ul>
+				<h5><strong><li>Sent</li></strong></h5>
+            <p>view list of all sends Messages.</p>
+			<img alt="Events" src="images/Admin/message/sendbox.png"><br><br>
+					</ol>
+					<hr>
+			</section>
+			<section id="Ambulance">
+            <h4><strong>24)  Ambulance</strong></h4>
+            <p>You can add an Ambulance Request and view list of all Ambulance Request.</p>
+			<img alt="Ambulance" src="images/Admin/ambulance/ambulance_request_list.png"><br><br>
+            <ol>
+			<h5><strong><li>Add Ambulance Request</li></strong></h5>
+            <img alt="Ambulance" src="images/Admin/ambulance/add_ambulance_request.png"><br><br>
+					<p>Must fill all required fields in the add ambulance request form to add a new ambulance request. </p>
+					<ul>
+						<li><strong>Ambulance</strong>: Select Ambulance.</li>
+						<li><strong>Patient</strong>: Select patient for you want to send ambulance request.</li>
+						<li><strong>Address</strong>: Enter address for ambulance request.</li>
+						<li><strong>Charges</strong>: Enter charges of the ambulance request.</li>
+						<li><strong>Tax</strong>: Select tax of the ambulance request.</li>
+						<li><strong>Request Date Date</strong>: Enter request date.</li>
+						<li><strong>Request Time</strong>: Enter request time.</li>
+						<li><strong>Dispatch Time</strong>: Enter dispatch time.</li>	
+					</ul>
+			<h5><strong><li>Ambulance List</li></strong></h5>
+			<p>You can view a list of all Ambulance.</p>
+			<img alt="Ambulance" src="images/Admin/ambulance/ambulance_list.png"><br><br>
+            
+			<h5><strong><li>Add Ambulance</li></strong></h5>
+            <img alt="Ambulance" src="images/Admin/ambulance/add_ambulance.png"><br><br>
+					<p>Must fill all required fields in add Ambulance form to add a new Ambulance. </p>
+					<ul>
+						<li><strong>Ambulance Id</strong>: Enter Ambulance Id.</li>
+						<li><strong>Registration Number</strong>: Enter registration number of a new ambulance.</li>
+						<li><strong>Driver Name</strong>: Enter driver name.</li>
+						<li><strong>Driver Address</strong>: Enter driver address.</li>
+						<li><strong>Driver Phone Number</strong>: Enter driver phone number.</li>
+						<li><strong>Description</strong>: Enter description.</li>	
+							
+					</ul></ol>
+					<hr>
+			</section>
+			<section id="Occupancy Report">
+            <h4><strong>25)  Occupancy Report</strong></h4>
+            <p>You can view Occupancy Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Admin/report/bed_occupancy.png"><br><br>
+			
+					<hr>
+			</section>
+			
+			<section id="operation Report">
+            <h4><strong>26)  Operation Report</strong></h4>
+            <p>You can view operation Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Admin/report/operation.png"><br><br>
+			
+					<hr>
+			</section>
+			<section id="Fail Report">
+            <h4><strong>27)  Fail Report</strong></h4>
+            <p>You can view Fail Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Admin/report/operation_fail.png"><br><br>
+			
+					<hr>
+			</section>
+			 <section id="sms_settion">
+            <h4><strong>28) SMS Setting</strong></h4>
+            <h5><strong> 1) Clickatell Setting</strong> </h5>
+            <img alt="display content of the clickatell " src="images/Admin/sms_settings/clickatell.png"><br><br>
+            <ul>
+				<li><strong>Select Message Service</strong>: Clickatell.</li>
+				<li><strong>Username</strong>: Enter Clickatell Username.</li>
+				<li><strong>Password</strong>: Enter Clickatell Password.</li>
+				<li><strong>API Key</strong>: Enter Clickatell API Key.</li>
+			</ul>
+			
+			<h5><strong> 2) Twilio Setting</strong> </h5>
+            <img alt="display content of the clickatell " src="images/Admin/sms_settings/twilio.png"><br><br>
+            <ul>
+				<li><strong>Select Message Service</strong>: Twilio.</li>
+				<li><strong>Account SID</strong>: Enter Twilio SID.</li>
+				<li><strong>Auth Token</strong>: Enter Twilio Token.</li>
+				<li><strong>From Number</strong>: Enter Twilio From Number.</li>
+			</ul>
+			<hr>
+            </section>
+            <section id="sms_settion">
+            <h4><strong>29) Auto Log/Activity</strong></h4>
+            <p> Admin can view auto log activity and also download and clear the log.</p>
+            <img alt="display content of the clickatell " src="images/Admin/audit_log/audit_log.png"><br><br>
+            		
+			
+			<hr>
+            </section>
+			
+			<section id="Template_Section">
+            <h4><strong>30) Mail Templates </strong></h4>	
+           <p>From this module, you can set notification mail templates. You can also enable or disable this notification mail from general settings.</p>          
+            <img alt="document_list" src="images/Admin/mail_template/mail_template.png"><br><br>
+			<p> Each template have also short-codes. So you can use that short-codes in your mail template. Following Short-codes are available in mail templates.</p>
+				<ul>
+					<li><strong>{{Hospital Name}} :</strong>  Display hospital name in mail.</li>
+					<li><strong>{{Patient Name}}  :</strong>  Display patient name in mail.</li>
+					<li><strong>{{Patient ID}} :</strong>  Display patient id in mail.</li>
+					<li><strong>{{UserName}} :</strong>  Display username name in mail.</li>
+					<li><strong>{{Password}} :</strong>  Display password in mail.</li>
+					<li><strong>{{Role Name}} :</strong>  Display role name in mail.</li>
+					<li><strong>{{Login Link}} :</strong>  Display login link in mail.</li>
+					<li><strong>{{Doctor Name}} :</strong>  Display Doctor name in mail.</li>
+					<li><strong>{{Department Name}} :</strong>  Display department name in mail.</li>
+					<li><strong>{{Nurse Name}} :</strong>  Display nurse in mail.</li>
+					<li><strong>{{Appointment Time}} :</strong>  Display appointment time in mail.</li>
+					<li><strong>{{Appointment Date}} :</strong>  Display appointment date in mail.</li>
+					<li><strong>{{Doctor Name}} :</strong>  Display Doctor in mail.</li>
+					<li><strong>{{InvoiceNo}} :</strong>  Display invoice in mail.</li>
+					<li><strong>{{Bed ID}} :</strong>  Display bed id in mail.</li>
+					<li><strong>{{Bed Category}} :</strong>  Display display bed category in mail.</li>
+					<li><strong>{{Charges Amount}} :</strong>  Display charge amount in mail.</li>
+					<li><strong>{{Receiver Name}} :</strong>  Display receiver name of message in mail.</li>
+					<li><strong>{{Sender Name}} :</strong>  Display sender name of message in mail.</li>
+					<li><strong>{{Message Content}} :</strong>  Display message content of message in mail.</li>
+				</ul>
+			<hr>
+        </section>
+			
+			
+			<section id="access_rights">
+            <h4><strong>31) Access Right</strong></h4>
+            <p> Admin can also set access rights from here. we have displayed  all frontend side pages and all roles. So that you can easily set access rights to each user role.</p>
+            <img alt="user rights content" src="images/Admin/access_right/access_right.png"><br><br>
+            		
+			
+			<hr>
+            </section>
+			
+		  </section>
+          
+         <section id="doctor_view">
+			<h3><strong>G) Doctor view</strong></h3>
+			
+			<section id="doctor-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view doctor side dashboard.</p> 
+            <img alt="" src="images/Doctor/dashboard.png"><br><br>           
+           
+             <hr>
+        </section>
+		<section id="Doctor-list">
+            <h4><strong>1) Doctor</strong></h4>
+            <p>Click on <strong>Doctor</strong> for view complete list all doctors in the hospital.</p> 
+            <img alt="" src="images/Doctor/doctor/doctor_list.png"><br><br>           
+			<p>Here doctor can see a list of doctors. The Doctor can also view the profile of another doctor. Click on <strong>View Profile</strong> and you can view doctor profile. </p><br>
+			<h5><strong><li id="view_profile">View Profile</li></strong></h5> 
+			 <img alt="" src="images/Doctor/doctor/view_doctor_profile.png"><br><br>  
+             <hr>
+        </section>
+			<section id="Patient-list">
+            <h4><strong>2) Patient</strong></h4>
+            <p>Click on <strong>the patient</strong> to view own patient list.</p> 
+            <img alt="" src="images/Doctor/patient/patient_list.png"><br><br>           
+			<p>For the view, patient detail clicks on <strong>View Detail</strong> button. </p>
+			<h5><strong><li id="view_detail">View Detail</li></strong></h5> 
+              <p>The doctor can view detail of particular patient by clicking on view detail button. This will open up details in the pop-up box. From here doctor can also all view history of the patient in the hospital.</p>
+			<p><strong>Diagnosis Reports</strong></p>
+		   <img alt="view detail" src="images/Doctor/patient/diagnosis_report.png">
+             <br>
+            <br> 
+			<p><strong>Doctor Notes </strong></p>
+		   <img alt="view detail" src="images/Doctor/patient/doctor_notes.png">
+             <br>
+            <br> 
+			<p><strong>Patient History </strong></p>
+		   <img alt="view detail" src="images/Doctor/patient/patient_history.png">
+             <br>
+            <br> 
+			<p><strong>Nurse Notes </strong></p>
+		   <img alt="view detail" src="images/Doctor/patient/nurse_notes.png">
+             <br>
+            <br> 
+            <h5><strong><li id="charges">Charges</li></strong></h5> 
+              <p>Display all charges a particular patient.</p>
+            
+            <img alt="view parent" src="images/Doctor/patient/patient_charges.png">
+            
+
+			<hr>
+        </section>
+		<section id="out-Patient-list">
+            <h4><strong>3) Out-Patient</strong></h4>
+            <p>Click on <strong>Out-patient</strong> for view own Out-patient list.</p> 
+            <img alt="" src="images/Doctor/outpatient/outpatient_list.png"><br><br>           
+			<p>Here doctor can see Out-patient details and charges. </p>
+			<p>For view Out-patient detail click on <strong><a href="#view_detail">View Detail</a></strong>.</p>
+			<p>For a view, Out-patient charges click on <strong><a href="#charges">Charges</a></strong>.</p>
+			<hr>
+        </section>
+		<section id="Nurse-list">
+            <h4><strong>4) Nurse</strong></h4>
+            <p>Click on <strong>Nurse</strong> for view nurse list of the hospital.</p> 
+            <img alt="" src="images/Doctor/nurse/nurse_list.png"><br><br>
+				<p>Here Doctor can see just list of all nurse available in the hospital.</p>
+			<hr>
+        </section>
+		<section id="support-staff-list">
+            <h4><strong>5) Support staff</strong></h4>
+            <p>Click on <strong>Support staff</strong> to view support staff list of the hospital.</p> 
+            <img alt="" src="images/Doctor/support_staff/support_staff_list.png"><br><br> 
+				<p>Here Doctor can see just list of all Support staff available in the hospital.</p>
+			<hr>
+        </section>
+		<section id="pharmacist">
+            <h4><strong>6) Pharmacist</strong></h4>
+            <p>Click on <strong>Pharmacist</strong> for view Pharmacist list of the hospital.</p> 
+            <img alt="" src="images/Doctor/pharmasist/pharmasist_list.png"><br><br>
+				<p>Here Doctor can see just list of all Pharmacist available in the hospital.</p>
+			<hr>
+        </section>
+		<section id="laboratory-staff-list">
+            <h4><strong>7) Laboratory staff</strong></h4>
+            <p>Click on <strong>Laboratory staff</strong> for view Laboratory staff list of the hospital.</p> 
+            <img alt="" src="images/Doctor/Laboratory_staff/laboratory_staff.png"><br><br>  
+			<p>Here Doctor can see just list of all Pharmacist in the hospital.</p>
+			<hr>
+        </section>
+		<section id="Accountant">
+            <h4><strong>8) Accountant</strong></h4>
+            <p>Click on <strong>Accountant</strong> for view Accountant list of the hospital. </p> 
+            <img alt="" src="images/Doctor/accountant/accountant_list.png"><br><br>  
+				<p>Here Doctor can see just list of all Accountant in the hospital.</p>
+			<hr>
+        </section>
+		<section id="treatment">
+            <h4><strong>9) Treatment</strong></h4>
+            <p>Click on <strong>Treatment	</strong> for view treatment list.</p> 
+            <img alt="" src="images/Doctor/tretment/tretment_list.png"><br><br> 
+			<p>Here doctor can also add new treatment for that just click on <strong>Add Treatment</strong>.</p>
+				<img alt="" src="images/Doctor/tretment/add_tretment.png"><br><br> 
+			<hr>
+        </section>
+		<section id="prescription">
+            <h4><strong>10) Prescription</strong></h4>
+            <p>Click on <strong>prescription</strong> for view prescriptions list.</p> 
+            <img alt="" src="images/Doctor/prescription/prescription_list.png"><br><br> 
+			<p>Here doctor can also write new prescriptions for the patient for that just click on <strong>Add prescriptions Report</strong>.</p>
+			<p>Doctor can prescription report request to the Laboratorist.</p>
+			<p><strong>Add prescriptions </strong></p>
+				<img alt="" src="images/Doctor/prescription/add_prescription.png"><br><br> 
+			<hr>
+        </section>
+		<section id="assign-bed-nurse">
+            <h4><strong>11) Assign Bed-Nurse</strong></h4>
+            <p>Click on <strong>Assign Bed-Nurse</strong> for view assigned bed list.</p> 
+            <img alt="" src="images/Doctor/assigned_bed/assigned_bed_list.png"><br><br> 
+			<p>Here doctor can also assign bed-nurse to the patient for that just click on <strong>Assign Bed</strong>.</p>
+			<p><strong>Assign Bed </strong></p>
+				<img alt="" src="images/Doctor/assigned_bed/assigned_bed.png"><br><br> 
+			<hr>
+        </section>
+		<section id="Operation">
+            <h4><strong>12) Operation</strong></h4>
+            <p>Click on <strong>Operation list</strong> for view all completed Operation list.</p> 
+            <img alt="" src="images/Doctor/operation/operation_list.png"><br><br> 
+			<p>Here doctor can also add operation for that just click on <strong>Add Operation</strong>.</p>
+			<p><strong>Add Operation </strong></p>
+				<img alt="" src="images/Doctor/operation/add_operation.png"><br><br> 
+			<hr>
+        </section>
+		<section id="Diagnosis">
+            <h4><strong>13) Diagnosis</strong></h4>
+            <p>Click on <strong>Diagnosis</strong> for view all diagnosis report list.</p> 
+            <img alt="" src="images/Doctor/diagnosis_report/diagnosis_report_list.png"><br><br> 
+			<p>Here doctor can also add diagnosis report for that just click on <strong>Add Diagnosis Report</strong>.</p>
+			<p><strong>Add Diagnosis Report </strong></p>
+				<img alt="" src="images/Doctor/diagnosis_report/add_diagnosis_report.png"><br><br> 
+				<p>If report types not available in the list the click on <strong>Add Or Remove</strong> button. Fill all required fields in add diagnosis form and save it.</p>
+			<hr>
+        </section>
+		<section id="Blood bank">
+            <h4><strong>14) Blood Bank</strong></h4>
+            <p>Click on <strong>Blood Bank</strong> for view blood bank status with currently available bloodstock of each blood group.</p> 
+            <img alt="" src="images/Doctor/blood_bank/blood_group_list.png"><br><br> 
+			<p>Here doctor can also view the list of a blood donor for that just click on <strong>Blood Donor List</strong>.</p>
+			<p><strong>Blood Donor List </strong></p>
+				<img alt="" src="images/Doctor/blood_bank/blood_donor_list.png"><br><br> 
+			<p>Here doctor can also view the list of a dispatch blood for that just click on <strong>Dispatch Blood List</strong>.</p>
+			<p><strong>Dispatch Blood List</strong></p>
+				<img alt="" src="images/Doctor/blood_bank/dispatch_blood_list.png"><br><br> 
+			<hr>
+        </section>
+		<section id="Appointment">
+            <h4><strong>15) Appointment</strong></h4>
+            <p>Click on <strong>Appointment</strong> for view own list of all appointment.</p> 
+            <img alt="" src="images/Doctor/appointment/appointment_list.png"> <br><br>          
+			<p>Here doctor can also add a new appointment for that just click on <strong>Add Appointment</strong>.</p>
+			<p><strong>Add Appointment </strong></p>
+				<img alt="" src="images/Doctor/appointment/add_appointment.png"><br><br> 
+				
+			<p>Here doctor can also add a appointment time stoat for that just click on <strong>Appointment Time</strong>.</p>
+			<p><strong>Appointment Time</strong></p>
+				<img alt="" src="images/Doctor/appointment/schedule_setup.png"><br><br>
+				<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: Select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+						<li><strong>Time</strong>: Select Time.</li>
+					</ul>
+				<p><strong>Note</strong>: For existing users compulsory needed to schedule setup. </p>
+             <hr>
+        </section>
+		<section id="Event">
+            <h4><strong>16) Event</strong></h4>
+            <p>Click on <strong>Event</strong> for view list of all events doctor related to doctors.</p> 
+            <img alt="" src="images/Doctor/event/event_list.png"> <br><br>          
+			
+             <hr>
+        </section>
+		<section id="Message">
+            <h4><strong>17) Message</strong></h4>
+            <p>Click on <strong>Message</strong> for view list of received messages in the inbox  of the message.</p> 
+            <img alt="" src="images/Doctor/message/inbox.png"> <br><br>          
+			<p>Click on <strong>Compose</strong> For write new message and doctor can send a message to other staff and also to all patients.</p> 
+			<p><strong>Compose </strong></p>
+            <img alt="" src="images/Doctor/message/compose_message.png"> <br><br> 
+			<p>Click on <strong>Sent</strong> to view all send the messages to others.</p> 
+			<p><strong>Send Messages </strong></p>
+            <img alt="" src="images/Doctor/message/sentbox.png"> <br><br> 
+			<p>If you want to view message then click on the subject link to that message.</p>
+			<p><strong>View Message </strong></p>
+			 <img alt="" src="images/Doctor/message/view_message.png"> <br><br>
+             <hr>
+        </section>
+		<section id="ambulance">
+            <h4><strong>18) Ambulance</strong></h4>
+            <p>Click on <strong>Ambulance</strong> for view all ambulance requests.</p> 
+            <img alt="" src="images/Doctor/ambulance/ambulance_request_list.png"> <br><br>          
+			<p>Here doctor can also add new request for an ambulance for that just click on <strong>Add Request</strong>.</p>
+			<p><strong>Add Request </strong></p>
+				<img alt="" src="images/Doctor/ambulance/add_ambulance_request.png"><br><br> 
+             <hr>
+        </section>
+		<section id="Occupancy Report">
+            <h4><strong>19)  Occupancy Report</strong></h4>
+            <p>You can view Occupancy Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Doctor/report/bed_occupancy.png"><br><br>
+			
+					<hr>
+			</section>
+			
+			<section id="operation Report">
+            <h4><strong>20)  Operation Report</strong></h4>
+            <p>You can view operation Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Doctor/report/operation_report.png"><br><br>
+			
+					<hr>
+			</section>
+			<section id="Fail Report">
+            <h4><strong>21)  Fail Report</strong></h4>
+            <p>You can view Fail Report by selecting time period.</p>
+			<p>Must be filled both required fields of view this report. </p>
+					<ul>
+						<li><strong>Start Date</strong>: select start date.</li>
+						<li><strong>End Date</strong>: Select End date.</li>
+					</ul>
+			<img alt="Events" src="images/Doctor/report/operation_fail_report.png"><br><br>
+			
+					<hr>
+			</section>
+		<section id="doctor-profilepage">
+            <h4><strong>22) Account</strong></h4>
+            <p>Click on <strong>Account</strong> for view own profile page.</p> 
+            <img alt="" src="images/Doctor/user_profile/user_profile.png"><br><br>           
+			<p>Here doctor can also edit own profile. </p>
+             <hr>
+        </section>
+		</section>
+		 
+		
+		 <section id="patient_view">
+			<h3><strong>H)  Patient View</strong></h3>
+			
+			<section id="patient-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> to view patient side dashboard.</p> 
+            <img alt="" src="images/Patient/dashboard.png"><br><br>           
+           
+             <hr>
+        </section>
+		<section id="Doctor-list">
+            <h4><strong>1) Doctor</strong></h4>
+            <p>Click on <strong>the doctor</strong> for view complete list all doctors in the hospital.</p> 
+            <img alt="" src="images/Patient/doctor/doctor_list.png"><br><br>           
+			<p>Here patient can see a list of doctors. The Patient can also view the profile of the doctor. Click on <strong><a href="#view_profile">View Profile</a></strong>. </p><br>
+			 <img alt="" src="images/Patient/doctor/view_details.png"><br><br>  
+             <hr>
+        </section>
+			<section id="Doctor-list">
+            <h4><strong>2) Patient</strong></h4>
+            <p>Click on <strong>the patient</strong> for view own in the patient list.</p> 
+            <img alt="" src="images/Patient/patient/patient_list.png"><br><br>           
+			<p>Here patient can see just own details and charges. Once patient can't see other patient's details and charges. </p>
+			<p>For the view, patient detail clicks on <strong>View Detail</strong> button and can view diagnosis report list. That is same as we have described in patient module of doctor view.</p>
+			<hr>
+        </section>
+			<section id="Appointment">
+            <h4><strong>3) Diagnosis </strong></h4>
+            <p>Click on <strong>Diagnosis </strong> for view own list of all diagnosis report and download it.</p> 
+            <img alt="" src="images/Patient/diagnosis_report/diagnosis_report_list.png"> <br><br>          
+			<p>Here patient can view and download diagnosis report. </p>
+             <hr>
+        </section>
+			<section id="Appointment">
+            <h4><strong>4) Appointment</strong></h4>
+            <p>Click on <strong>Appointment</strong> for view own list of all appointment.</p> 
+            <img alt="" src="images/Patient/appointment/appointment_list.png"> <br><br>          
+			<p>Here patient can just see own appointments in hospital. </p>
+				<ul>
+				<li><strong>Add Appointment</strong></li>
+				<p>The patient can also book an appointment.</p>
+				 <img alt="" src="images/Patient/appointment/add_appointment.png"> <br><br> 
+				</ul>
+             <hr>
+        </section>
+		<section id="patient-profilepage">
+            <h4><strong>5) Account</strong></h4>
+            <p>Click on <strong>Account</strong> for view own profile page.</p> 
+            <img alt="" src="images/Patient/user_profile/user_profile.png"><br><br>           
+			<p>Here patient can also edit own profile. </p>
+             <hr>
+        </section>
+		</section>
+		
+		<section id="nurse_view">
+			<h3><strong>I)  Nurse View</strong></h3>
+			
+			<section id="nurse-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view nurse side dashboard.</p> 
+            <img alt="" src="images/Nurse/dashboard.png"><br><br>           
+           <p>We have already defined  some menus in doctor view here available the same menu are work same like that so that here we just define unique menu then doctor view.</p>
+             <hr>
+			 
+        </section>
+		
+			
+			<section id="Appointment">
+            <h4><strong>1) Appointment</strong></h4>
+            <p>Click on <strong>Appointment</strong> for view list of all appointments.</p> 
+            <img alt="" src="images/Nurse/appointment/appointment_list.png"> <br><br>          
+			<p>Here nurse can view all appointments as well as also add a new appointment for that just click on <strong>Add Appointment</strong>.</p>
+			<p><strong>Add Appointment </strong></p>
+				<img alt="" src="images/Nurse/appointment/add_appointment.png"><br><br>
+			<p>The nurse can also add an appointment for the patient. Fill all required field in add appointment form and save it.</p>				
+             <hr>
+        </section>
+		<section id="blood bank">
+            <h4><strong>2) Blood Bank</strong></h4>
+			<p>Click on <strong>Blood Bank</strong> for view blood bank current bloodstock  in blood bank of each blood group.</p> 
+            <img alt="" src="images/Nurse/blood_bank/blood_group_list.png"><br><br>           
+			<p>The nurse can also add new blood group or edit stock of blood.</p>
+			<h5><strong><li>Add Blood Group</li></strong></h5>
+		    <img alt="blood group" src="images/Nurse/blood_bank/add_blood_group.png"><br><br>
+            <p>The nurse can also manage bloodstock from here.</p>
+			<h5><strong><li>Blood Donor list</li></strong></h5>
+		    <img alt="blood donor list" src="images/Nurse/blood_bank/blood_donor_list.png"><br><br>
+            <p>The nurse can also view a list of blood donors.</p>
+			<h5><strong><li>Add Blood Donor</li></strong></h5>
+		    <img alt="add blood donor" src="images/Nurse/blood_bank/add_blood_donor.png"><br><br>
+            <p>The nurse can also add or manage blood donors.</p>
+			<h5><strong><li>Dispatch Blood list</li></strong></h5>
+		    <img alt="blood donor list" src="images/Nurse/blood_bank/dispatch_blood_list.png"><br><br>
+            <p>The nurse can also view a list of dispatch blood.</p>
+			<h5><strong><li>Dispatch Blood</li></strong></h5>
+		    <img alt="add blood donor" src="images/Nurse/blood_bank/dispatch_blood.png"><br><br>
+            <p>The nurse can also add or manage dispatch blood.</p>
+             <hr>
+        </section>
+		</section>
+
+		 <section id="pharmacist_view">
+			<h3><strong>J)  Pharmacist View</strong></h3>
+			
+			<section id="Pharmacist-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view pharmacist side dashboard.</p> 
+            <img alt="" src="images/Pharmasist/dashboard.png"><br><br>           
+           <p>We have already defined  some menus in doctor view here available the same menu are work same like that so that here we just define unique menu then doctor view.</p>
+             <hr>
+			 
+        </section>
+		
+			
+			<section id="Medicine">
+            <h4><strong>1) Medicine</strong></h4>
+            <p>Click on <strong>Medicine</strong> for view list of all Medicine.</p> 
+            <img alt="" src="images/Pharmasist/medicine/medicine_list.png"> <br><br>          
+			<p>Here pharmacist can view all medicine as well as also add new medicine for that just click on <strong>Add Medicine</strong>.</p>
+			<p><strong>Add Medicine </strong></p>
+				<img alt="" src="images/Pharmasist/medicine/add_medicine.png"><br><br> 
+				<p>If not medicine category not available in the list then click on <strong>Add Or Remove</strong> button and add a new category. Fill all required fields in add medicine form and save it.</p>
+             <hr>
+        </section>
+		
+		</section>
+		
+		<section id="laboratory_staff_view">
+			<h3><strong>K)  Laboratory Staff View</strong></h3>
+			
+			<section id="Laboratory Staff-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view Laboratory Staff side dashboard.</p> 
+            <img alt="" src="images/Laboratry_staff/dashboard.png"><br><br>           
+           <p>We have already defined some menus in doctor view here available the same menu are work same like that so that here we just define unique menu then doctor view.</p>
+             <hr>
+			 	
+            <h4><strong>1) Diagnosis Report</strong></h4>
+            <p>Click on <strong>Diagnosis</strong> for view list of all diagnosis report.</p> 
+            <img alt="" src="images/Laboratry_staff/diagnosis_report/diagnosis_report_list.png"> <br><br>          
+			<p>Here Laboratory Staff can view all diagnosis as well as also add new diagnosis for that just click on <strong>Add Diagnosis Report</strong>.</p>
+			<p><strong>Add Diagnosis Report</strong></p>
+				<img alt="" src="images/Laboratry_staff/diagnosis_report/add_diagnosis.png"><br><br> 		
+			<p><strong>New Diagnosis Report Request</strong></p>
+				<img alt="" src="images/Laboratry_staff/diagnosis_report/diagnosis_request.png"><br><br> 				
+             <hr>
+        </section>
+		</section>
+		<section id="Support_staff_view">
+			<h3><strong>L)  Support Staff View</strong></h3>
+			
+			<section id="Support Staff-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> to view Support Staff side dashboard.</p> 
+            <img alt="" src="images/Support_staff/dashboard.png"><br><br>           
+           <p>We have already defined some menus in doctor view here available the same menu are work same like that so that here we just define unique menu then doctor view.</p>
+             <hr>
+			 
+        </section>
+		
+		</section>
+		<section id="accountant_view">
+			<h3><strong>M)  Accountant View</strong></h3>
+			
+			<section id="Accountant-dashboard">
+            
+            <p>Click on <strong>Dashboard</strong> for view accountant side dashboard.</p> 
+            <img alt="" src="images/Accountant/dashboard.png"><br><br>           
+           <p>We have already defined  some menus in doctor view here available the same menu are work same like that so that here we just define unique menu then doctor view.</p>
+		   </section>
+		   <section id="Invoice">
+            <h4><strong>1)  Invoice</strong></h4>
+			<p>Click on <strong>Invoice</strong> to view all invoice list.</p>
+			<img alt="add invoice" src="images/Accountant/invoice/invoice_list.png"><br><br>
+			<h5><strong><li>Add Invoice</li></strong></h5>
+		    <img alt="add invoice" src="images/Accountant/invoice/add_invoice.png"><br><br>
+            <p>The accountant can add or manage invoice.</p>
+			<h5><strong><li>Income list</li></strong></h5>
+		    <img alt="income list" src="images/Accountant/invoice/income_list.png"><br><br>
+            <p>The accountant can also view a list of all income.</p>
+			<h5><strong><li>Add Income</li></strong></h5>
+		    <img alt="add income" src="images/Accountant/invoice/add_income.png"><br><br>
+			<p>Here accountant can add more than one entry of income with the amount. so that can add many entries in one invoice. For add other entry click on <strong>Add Income Entry</strong> button. </p>
+            <p>The accountant can also add or manage income.</p>
+			<h5><strong><li>Expense list</li></strong></h5>
+		    <img alt="Expense list" src="images/Accountant/invoice/expense_list.png"><br><br>
+            <p>The accountant can also view a list of all Expense.</p>
+			<h5><strong><li>Add Expense</li></strong></h5>
+		    <img alt="add income" src="images/Accountant/invoice/add_expense.png"><br><br>
+            <p>The accountant can also add or manage Expense.</p>
+             <hr>
+			 
+        </section>
+		
+		</section>
+		
+		</section>        
+          <section id="FAQ">
+		  <h3><strong>N) FAQ</strong></h3>
+		  	<p><strong>1) Prerequisite section.</strong></p>
+			<p><mark>Note*</mark> The Plugin works best on Cpanel/WHM-enabled hosting. Usage/installation on Nginx / Plesk is not recommended and we will not be able to provide support for the same.</p>
+
+          	<p><strong>2) Don't See Hospital Management Login Page on page listing.</strong></p>
+          	<p>Don't worry, You can create a login from anywhere on your frontend page. you can add login form in two ways. </p>
+            <ol>
+            	<li>By using the shortcode [hmgt_login] of anywhere at any page</li>
+                <li>Using do_shortcode("[hmgt_login]") at template page</li>
+            </ol>   
+          	<p>If you want to have any paid customization as your requirement in this plugin you can contact us on <a href="">sales@mojoomla.com</a>.</p>
+            <hr>
+          </section>
+		  
+         
+                    <!-- start-footer-->
+          <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
+          <!-- end-footer -->
+        </section>
+		
+      </div>
+      <!-- end-side-content -->
+    </div>
+    <!-- start-footer-->
+    <div id="footer-sm"> © 2023 Mojoomla All Rights Reserved. </div>
+    <!-- end-footer -->
+    <div class="white-space"></div>
+  </section>
+  <!-- container -->
+  <!-- end-footer -->
+  <span id="scroll-top"><a class="scrollup"></a></span> </div>
+<!-- end-wrap -->
+<!-- End Document
+         ================================================== -->
+<script src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/doubletaptogo.js" ></script>
+<script type="text/javascript" src="js/cube-custom.js" ></script>
+
+
+</body>
+</html>
